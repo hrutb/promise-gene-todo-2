@@ -251,7 +251,7 @@ function  updateTr(updateObj){
                tr.innerHTML =`<tr>
                                 <td>${todoArr.length}</td>
                                 <td>${updateObj.title}</td>
-                                <td><span class="badge ${updateObj.completed ? "bg-success" :"bg-danger"}">${updateObj.completed ? "Completed":"Pending"}</span></td>
+                                <td><span class="badge ${updateObj.completed ? "bg-success" :"bg-danger"}"> ${ updateObj.completed ? "Completed":"Pending"}</span></td>
                                 <td><i onclick="onEdit(this)" class="fa-solid fa-pen-to-square text-primary fa-2x" ></i></td>
                                 <td><i onclick="onRemove(this)" class="fa-solid fa-trash text-danger fa-2x"></i></td>
                          </tr>` 
